@@ -1,0 +1,28 @@
+*{
+    color: blue;
+}
+
+p {
+
+    color: red;
+    width: 300px;
+}
+
+/**
+Esto es un comentario dentro de un documento de css
+
+*/
+h1 {
+    border: 10px solid black;
+    padding: 5px;
+    margin: 30px;
+    font-weight: bold;
+    color: grey;
+}
+section {
+    width: 300px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;
+
+}

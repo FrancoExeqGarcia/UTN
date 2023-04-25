@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .clsParrafo{
+            font-size: 12px;
+            font-style: italic;
+            font-weight: bold;
+            font-family: Arial;
+            color: green;
+            text-transform: capitalize;
+            text-decoration: dotted;
+            text-align: right;
+            line-height: 25px;
+            letter-spacing: 5px;
+            word-spacing: 50px;
+
+        }
+        p:empty{
+            display: none;
+        }
+        p::first-letter{
+            font-size: 24px;
+            color: blueviolet;
+        }
+        p::first-line{
+            background-color: aqua;
+        }
+        ul li:first-child{
+            color: aqua;
+        }
+        article *:first-of-type{
+            background-color: yellow;
+        }
+        a:link{
+            color: green;
+        }
+        a:visited{
+            color: yellowgreen;
+        }
+        a:hover{
+            text-transform: capitalize;
+        }
+        a:active{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 15px;
+        }
+        a:focus{
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <table border="1" cellpadding="10" cellspacing="5">
+        <tr>
+            <td>Celda 1</td>
+            <td>Celda 2</td>
+            <td>Celda 3</td>
+        </tr>
+    </table>
+   
+    <p class="clsParrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem facere voluptas fugit reprehenderit quidem voluptate sint atque magni aut sed dolore quisquam optio quia dolorem accusamus minus possimus, facilis enim.</p>
+<ul>
+    <li>
+
+    </li>
+</ul>
+<article>
+    <div>!este 'div' es primero</div>
+    <div></div>
+    <div></div>
+    <div></div>
+</article>
+</body>
+</html>
