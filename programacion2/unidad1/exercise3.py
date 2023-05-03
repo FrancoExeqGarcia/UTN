@@ -12,11 +12,10 @@ persona_02 = "Kevin"
 edad_02 = 41
 
 # COMPLETAR - INICIO
-
 # COMPLETAR - FIN
 
 assert comparar_nombre_y_edad
-
+print(comparar_nombre_y_edad)
 
 """
 Construir una expresión lógica que use TODAS las variables y cuyo resultado sea

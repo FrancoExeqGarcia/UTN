@@ -1,0 +1,1 @@
+operacion_basica(1, 0, False) == "Operación no válida"

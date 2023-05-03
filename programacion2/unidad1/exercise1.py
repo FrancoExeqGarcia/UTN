@@ -40,7 +40,7 @@ area_cuadrado = pow(lado_cuadrado, 2)
 # COMPLETAR - FIN
 
 assert area_cuadrado == 25
-
+print(area_cuadrado)
 
 """
 Calcular la cantidad de unidades a comprar.
@@ -55,7 +55,7 @@ cantidad_a_comprar = presupuesto_disponible // precio
 # COMPLETAR - FIN
 
 assert cantidad_a_comprar == 2
-
+print(cantidad_a_comprar)
 
 """
 Determinar si el número de la variable es divisible por 7.
@@ -65,7 +65,8 @@ Restricción: Usar el operador módulo.
 numero_incalculable = 2 ** 54 - 1
 
 # COMPLETAR - INICIO
-
+es_divisible_por_siete = numero_incalculable % 7 == 0
 # COMPLETAR - FIN
 
 assert es_divisible_por_siete
+print(es_divisible_por_siete)

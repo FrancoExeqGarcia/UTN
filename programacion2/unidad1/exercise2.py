@@ -14,6 +14,7 @@ piso_mojado = esta_lloviendo or riego_activado
 # COMPLETAR - FIN
 
 assert piso_mojado
+print(piso_mojado)
 
 
 """
@@ -26,13 +27,11 @@ lado_cuadrado = 5
 area_cuadrado = pow(lado_cuadrado, 2)
 
 # COMPLETAR - INICIO
-lado_cuadrado = 5
-area_cuadrado = pow(lado_cuadrado, 2)
-
 area_mayor_a_cinco = not(area_cuadrado < 5)
 # COMPLETAR - FIN
 
 assert area_mayor_a_cinco
+print(area_mayor_a_cinco)
 
 
 """
@@ -51,7 +50,7 @@ resultado = es_divisible_1 and no_es_divisible_2
 # COMPLETAR - FIN
 
 assert resultado
-
+print(resultado)
 
 """
 Construir una expresión lógica que use TODAS las variables y cuyo resultado sea
@@ -66,7 +65,10 @@ variable_04 = "90"
 variable_05 = 100
 
 # COMPLETAR - INICIO
-resultado = (variable_01 or variable_02 or variable_03 or variable_04 or variable_05) and (not variable_01 or not variable_02 or not variable_03 or not variable_04 or not variable_05)
+
+resultado2 = variable_03 or (not variable_01 and variable_02) or (variable_04 and variable_05)
+
 # COMPLETAR - FIN
 
-assert resultado == 80
+assert resultado2 == 80
+print(resultado2)
