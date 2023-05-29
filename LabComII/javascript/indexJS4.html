@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mostrar datos de un alumno</title>
+	<meta charset="UTF-8">
+	<script>
+		function mostrarDatos() {
+			// Obtener los datos del alumno
+			let nombre = document.getElementById("nombre").value;
+			let apellido = document.getElementById("apellido").value;
+			let domicilio = document.getElementById("domicilio").value;
+			let curso = document.getElementById("curso").value;
+			let carrera = document.getElementById("carrera").value;
+			let materia = document.getElementById("materia").value;
+			let notaPrimerParcial = parseFloat(document.getElementById("nota-primer-parcial").value);
+
+			// Mostrar los datos del alumno en la página HTML
+			document.getElementById("datos-alumno").innerHTML = "Nombre: " + nombre + "<br>" +
+				"Apellido: " + apellido + "<br>" +
+				"Domicilio: " + domicilio + "<br>" +
+				"Curso: " + curso + "<br>" +
+				"Carrera: " + carrera + "<br>" +
+				"Materia: " + materia + "<br>" +
+				"Nota primer parcial: " + notaPrimerParcial.toFixed(2);
+		}
+	</script>
+</head>
+<body>
+	<h1>Mostrar datos de un alumno</h1>
+	<p>Ingrese los datos del alumno:</p>
+	<label for="nombre">Nombre:</label>
+	<input type="text" id="nombre"><br>
+	<label for="apellido">Apellido:</label>
+	<input type="text" id="apellido"><br>
+	<label for="domicilio">Domicilio:</label>
+	<input type="text" id="domicilio"><br>
+	<label for="curso">Curso:</label>
+	<input type="text" id="curso"><br>
+	<label for="carrera">Carrera:</label>
+	<input type="text" id="carrera"><br>
+	<label for="materia">Materia:</label>
+	<input type="text" id="materia"><br>
+	<label for="nota-primer-parcial">Nota primer parcial:</label>
+	<input type="number" id="nota-primer-parcial"><br>
+	<button onclick="mostrarDatos()">Mostrar datos</button>
+	<div id="datos-alumno"></div>
+</body>
+</html>

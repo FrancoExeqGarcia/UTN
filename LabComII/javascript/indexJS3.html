@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Informar nivel de postulante según porcentaje de respuestas correctas</title>
+	<meta charset="UTF-8">
+	<script>
+		function calcularNivel() {
+			// Obtener los datos del postulante
+			let nombre = document.getElementById("nombre").value;
+			let totalPreguntas = parseInt(document.getElementById("total-preguntas").value);
+			let preguntasCorrectas = parseInt(document.getElementById("preguntas-correctas").value);
+
+			// Calcular el porcentaje de respuestas correctas
+			let porcentajeCorrectas = (preguntasCorrectas / totalPreguntas) * 100;
+
+			// Determinar el nivel del postulante según el porcentaje de respuestas correctas
+			let nivel;
+			if (porcentajeCorrectas >= 90) {
+				nivel = "Nivel superior";
+			} else if (porcentajeCorrectas >= 75) {
+				nivel = "Nivel medio";
+			} else if (porcentajeCorrectas >= 50) {
+				nivel = "Nivel regular";
+			} else {
+				nivel = "Fuera de nivel";
+			}
+
+			// Mostrar el nivel del postulante en la página HTML
+			document.getElementById("nivel").innerHTML = "El postulante " + nombre + " ha obtenido un " + porcentajeCorrectas.toFixed(2) + "% de respuestas correctas y su nivel es: " + nivel + ".";
+		}
+	</script>
+</head>
+<body>
+	<h3>Datos del postulante</h3>
+	<p>Ingrese los datos del postulante:</p>
+    <div id="div-dato1">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre"><br>
+    </div>
+	<label for="total-preguntas">Cantidad total de preguntas:</label>
+	<input type="number" id="total-preguntas"><br>
+	<label for="preguntas-correctas">Cantidad de preguntas correctas:</label>
+	<input type="number" id="preguntas-correctas"><br>
+	<button onclick="calcularNivel()">Calcular nivel</button>
+	<p id="nivel"></p>
+</body>
+</html>

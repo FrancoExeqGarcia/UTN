@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function clkDeterminar(){
+            var num1 = document.getElementById('num1').value;
+            var resultado = document.getElementById('resultado');
+            var txtResultado;
+
+            if(num1 > 0)
+                txtResultado="Valor positivo";       
+            else if (num1 == 0)
+                txtResultado='Valor Cero'          
+            else
+                txtResultado='valor negativo'
+            
+
+                resultado.innerText=txtResultado;
+        }
+    </script>
+</head>
+<body>
+    <h3>Ingresar un valor: </h3>
+    <form id="form" action="">
+        <div id="div-num1">
+            <label for="num1">Numero1 :</label>
+            <input type="number" name="num1" id="num1">
+        </div>
+        <br>
+        <button type="button" id="boton" onclick="clkDeterminar();">Determinar</button>
+    </form>
+    <br>
+    <h1>
+        <div id="resultado"></div>
+    </h1>
+</body>
+</html>
