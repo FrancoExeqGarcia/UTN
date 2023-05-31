@@ -12,6 +12,7 @@ persona_02 = "Kevin"
 edad_02 = 41
 
 # COMPLETAR - INICIO
+comparar_nombre_y_edad = (persona_01 and persona_02) and (edad_01 and not edad_02)
 # COMPLETAR - FIN
 
 assert comparar_nombre_y_edad
